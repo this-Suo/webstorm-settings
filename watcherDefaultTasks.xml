@@ -14,6 +14,7 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="D:/WebstormProjects/test/test.coffee" />
+      <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
@@ -33,6 +34,7 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$USER_HOME$/AppData/Roaming/npm/jade.cmd" />
+      <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
@@ -52,33 +54,35 @@
       </option>
       <option name="outputFromStdout" value="false" />
       <option name="program" value="D:/WebstormProjects/LejieServer/node_modules/stylus/bin/stylus" />
+      <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--no-color --clean-css $FileName$" />
+      <option name="arguments" value="$FileName$ $FileNameWithoutExtension$.css --source-map" />
       <option name="checkSyntaxErrors" value="true" />
-      <option name="description" value="Compiles .less files into .css files" />
-      <option name="exitCodeBehavior" value="NEVER" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="less" />
       <option name="immediateSync" value="true" />
       <option name="name" value="Less" />
-      <option name="output" value="$FileNameWithoutExtension$.css" />
+      <option name="output" value="$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map" />
       <option name="outputFilters">
         <array>
           <FilterInfo>
-            <option name="description" value="lessc error format" />
-            <option name="name" value="lessc" />
+            <option name="description" value="" />
+            <option name="name" value="" />
             <option name="regExp" value="$MESSAGE$\Q in \E$FILE_PATH$\Q on line \E$LINE$\Q, column \E$COLUMN$" />
           </FilterInfo>
         </array>
       </option>
-      <option name="outputFromStdout" value="true" />
-      <option name="program" value="$USER_HOME$/Documents/projects/com.whxxcy.8ddao.static.1/node_modules/.bin/lessc" />
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="lessc" />
+      <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="Project Files" />
-      <option name="trackOnlyRoot" value="false" />
+      <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />
       <envs />
     </TaskOptions>
